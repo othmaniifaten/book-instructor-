@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<script>
-
-function book(title, author,pages,read) {
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.read = read
-  this.info = function() {
-
-      
-      
-      
-    return(this.title +" "+ "by "+this.author+", "+  this.pages+" pages, "+ (this.read?"already read":"not read yet"))
-  }
-
-
-let harry=new book("the hobbit","J.R.R. Tolkien",295,false);
-}
-</script>
-    
-</body>
-</html> 
+function Book (title,pages,author,read)
+{this.title=title 
+this.pages=pages
+this.author=author 
+this.read=read 
+this.info=function() 
+{console.log(title+"by"+author+","+pages +"pages"+read);}
+ 
+const TheHobbit = new Book('The hobbit',295,'J.R.R. Tolkien','False')}
